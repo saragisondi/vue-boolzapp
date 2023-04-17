@@ -21,6 +21,7 @@ img{
   width: 60px;
   height: 60px;
   border-radius: 50px;
+
 }
 
 .container{
@@ -29,8 +30,6 @@ img{
   align-items: center;
   margin: 30px;
 }
-
-
 
 
 /*MAIN*/
@@ -103,6 +102,7 @@ aside{
   height: 36px;
   width: 15%;
   color:#A6A6A7;
+  cursor: pointer;
 }
 
 .search input{
@@ -110,6 +110,7 @@ aside{
   height: 80%;
   border-style: none;
   border: 1px solid #F4F4F4;
+  outline:none;
 }
 
 /*CONTACTS*/
@@ -120,8 +121,28 @@ aside{
 }
 
 .contacts li{
-  height: 70px;
-  border: 1px solid black;
+  height: 80px;
+  display: flex;
+  margin: 10px 0;
+}
+
+.contacts .info{
+  margin: 5px 20px;
+  width: 100%;
+}
+
+.info .row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts .info div:first-child{
+  font-size: 19px;
+}
+
+.contacts .info div:last-child{
+  font-size: 14px;
+  color: #C6C2C8;
 }
 
 .icon{
@@ -187,4 +208,5 @@ aside{
   height: 80%;
   border-radius: 5px;
   border-style:none;
+  outline:none;
 }

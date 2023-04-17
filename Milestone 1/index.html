@@ -55,13 +55,27 @@
           <button>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <input type="text" placeholder="   Cerca o inizia una nuova chat">
+          <input type="text" placeholder="Cerca o inizia una nuova chat">
         </div>
 
         <div class="contacts">
+
           <ul>
-            <li></li>
+
+            <li v-for="(contact, index) in contacts">
+              <img :src="contact.avatar" alt="avatar">
+              <div class="info">
+                <div class="row">
+                  <div>{{contact.name}}</div>
+                  <div>12:00</div>
+                </div>
+                <div>Ultimo messaggio inviato</div>
+              </div>
+            </li>
+
           </ul>
+
+          
         </div>
       </aside>
 
@@ -80,7 +94,7 @@
 
         <div class="input-area">
           <i class="fa-regular fa-face-smile"></i>
-          <input type="text" placeholder="    Scrivi un messaggio">
+          <input type="text" placeholder="Scrivi un messaggio">
           <i class="fa-solid fa-microphone"></i>
         </div>
       </div>
