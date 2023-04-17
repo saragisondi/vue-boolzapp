@@ -12,6 +12,12 @@ body{
   height: 100vh;
 }
 
+li{
+  background-color: bisque;
+  height: 80px;
+  border: 1px solid black;
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -26,7 +32,7 @@ main{
   display: flex;
 }
 
-.user, .interlocutor{
+.user, .contacts-last-login{
   background-color: #EAEAEA;
   height: 80px;
   border: 1px solid #D3D3D3;
@@ -46,6 +52,12 @@ aside{
 .search{
   background-color: #FAFAFA;
   height: 50px;
+}
+
+.contacts{
+  overflow: scroll;
+  width: 520px;
+  height: 640px;
 }
 
 /*RIGHT SIDE*/
