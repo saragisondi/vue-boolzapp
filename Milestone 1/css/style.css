@@ -11,3 +11,29 @@ body{
   background: linear-gradient(0deg, rgba(217,219,212,1) 80%, rgba(0,150,136,1) 80%); 
   height: 100vh;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+/*MAIN*/
+main{
+  width: 80%;
+  height: 800px;
+  display: flex;
+}
+
+/*ASIDE*/
+aside{
+  background-color: aqua;
+  width: 250px;
+}
+
+/*RIGHT SIDE*/
+.right-side{
+  background-color: brown;
+  width: calc(100% - 250px);
+}
