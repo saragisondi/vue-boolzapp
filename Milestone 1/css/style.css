@@ -21,7 +21,7 @@ body{
 
 /*MAIN*/
 main{
-  width: 80%;
+  width: 85%;
   height: 800px;
   display: flex;
 }
@@ -35,7 +35,17 @@ main{
 /*ASIDE*/
 aside{
   background-color: #FFFFFF;
-  width: 250px;
+  width: 650px;
+}
+
+.notification{
+  background-color: #8EDAFC;
+  height: 80px;
+}
+
+.search{
+  background-color: #FAFAFA;
+  height: 50px;
 }
 
 /*RIGHT SIDE*/
