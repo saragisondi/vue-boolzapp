@@ -21,6 +21,7 @@ img{
   width: 60px;
   height: 60px;
   border-radius: 50px;
+  margin: 0 20px;
 
 }
 
@@ -126,7 +127,7 @@ aside{
   margin: 10px 0;
 }
 
-.contacts .info{
+.info{
   margin: 5px 20px;
   width: 100%;
 }
@@ -136,11 +137,11 @@ aside{
   justify-content: space-between;
 }
 
-.contacts .info div:first-child{
+.info div:first-child{
   font-size: 19px;
 }
 
-.contacts .info div:last-child{
+.info div:last-child{
   font-size: 14px;
   color: #C6C2C8;
 }
@@ -163,12 +164,17 @@ aside{
   justify-content: space-between;
 }
 
-.user-info{
+.user .info{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*RIGHT SIDE*/
 .right-side{
@@ -186,6 +192,9 @@ aside{
   justify-content: space-between;
 }
 
+.contact{
+  display: flex;
+}
 
 /*INPUT*/
 .input-area i{
