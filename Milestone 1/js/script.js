@@ -44,7 +44,12 @@ createApp({
           avatar:'img/avatar_8.jpg',
           visible:true,
         },
-      ]
+      ],
+      date:'oggi',
+      clock:'00:00'
     }
-  }
+  },
+
+
+
 }).mount('#app')

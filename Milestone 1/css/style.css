@@ -194,6 +194,51 @@ aside{
 
 .contact{
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SMS*/
+.container-sms{
+  height: 70%;
+}
+
+.container-sms-send{
+  margin-right: 100px ;
+}
+
+.container-sms-received{
+  margin-left: 100px ;
+}
+
+.sms{
+  width: 350px;
+  border-radius: 10px;
+  padding:15px;
+}
+
+.sms.send{
+  background-color:#D5F9BA;
+
+}
+
+.sms.received{
+  background-color: #FFFFFF;
+
+}
+
+.sms-info{
+  color: #C5CCCC;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.sms-info span{
+  margin-right: 10px
+}
+
+.sms-info span:first-child{
+  color:#0175AF;
 }
 
 /*INPUT*/
@@ -219,3 +264,5 @@ aside{
   border-style:none;
   outline:none;
 }
+
+

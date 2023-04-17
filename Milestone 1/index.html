@@ -81,11 +81,11 @@
 
         <div class="contacts-last-login">
           <div class="contact">
-            <img :src="" alt="">
+            <img src="" alt="avatar">
 
             <div class="info">
               <div>Nome</div>
-              <div>Ultimo accesso oggi alle 12:00</div>
+              <div>Ultimo accesso {{date}} alle {{clock}}</div>
             </div>
 
           </div>
@@ -97,6 +97,52 @@
           </div>
 
         </div>
+
+        <div class="container-sms">
+
+          <div class="container-sms-send">
+            <div class="sms send">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam quaerat nemo expedita? Obcaecati blanditiis numquam at vel, doloremque consectetur!
+              <div class="sms-info">
+                <span><i class="fa-solid fa-check-double"></i></span>
+                <span>{{clock}}</span>
+              </div>
+            </div>
+            
+            <div class="sms send">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam quaerat nemo expedita? Obcaecati blanditiis numquam at vel, doloremque consectetur!
+              <div class="sms-info">
+                <span><i class="fa-solid fa-check-double"></i></span>
+                <span>{{clock}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-sms-received">
+            <div class="sms received">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi rerum repellat distinctio quidem repudiandae quia eligendi asperiores non harum.
+  
+              <div class="sms-info">
+                <span><i class="fa-solid fa-check-double"></i></span>
+                <span>{{clock}}</span>
+              </div>
+            </div>
+
+            <div class="sms received">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi rerum repellat distinctio quidem repudiandae quia eligendi asperiores non harum.
+  
+              <div class="sms-info">
+                <span><i class="fa-solid fa-check-double"></i></span>
+                <span>{{clock}}</span>
+              </div>
+            </div>
+            
+          </div>
+          
+
+        </div>
+
+
 
         <div class="input-area">
           <i class="fa-regular fa-face-smile"></i>
