@@ -26,14 +26,30 @@ main{
   display: flex;
 }
 
+.user, .interlocutor{
+  background-color: #EAEAEA;
+  height: 80px;
+  border: 1px solid #D3D3D3;
+}
+
 /*ASIDE*/
 aside{
-  background-color: aqua;
+  background-color: #FFFFFF;
   width: 250px;
 }
 
 /*RIGHT SIDE*/
 .right-side{
-  background-color: brown;
+  background-image: url('../img/mine.jpg');
   width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.input-area{
+  background-color:#FFFFFF ;
+  height: 80px;
+  border: 1px solid #D3D3D3;
 }
