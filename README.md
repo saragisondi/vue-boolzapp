@@ -20,6 +20,13 @@
 - **Click sul contatto** mostra la conversazione del contatto cliccato;
 
 ### **Steps**:
+1. Creo una classe active per gli elementi della lista;
+2. Creo un contatore per collegare i sms ad ogni singolo contatto;
+3. Creo una funzione che al click dell'utente mi stampa in pagina i sms e i dati del contatto in alto;
+
+### **Milestone 3** <br>
+**Aggiunta di un messaggio:** l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde
+**Risposta dall’interlocutore:** ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
+
+### **Steps**:
 1. Creo un messaggio vuoto che collego all'input e al tasto enter in modo che stamperà quello che scrivo;
-2. Faccio un ciclo for per visualizzare i sms dei miei contatti e 
-3. Stampo in pagina il messaggio del contatto attivo;
