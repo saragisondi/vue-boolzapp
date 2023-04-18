@@ -188,7 +188,7 @@ methods:{
     }
     console.log(myNewSms)
 
-    this.contacts.push(myNewSms)
+    this.contacts[this.counter].messages.push(myNewSms)
 
     this.myMessage="";
   }
