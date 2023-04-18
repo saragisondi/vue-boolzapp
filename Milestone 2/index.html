@@ -60,7 +60,7 @@
 
           <ul>
 
-            <li v-for="(contact, index) in contacts">
+            <li v-for="(contact, index) in contacts " :class="{'active' : index === 0}">
               <img :src="contact.avatar" alt="avatar">
               <div class="info">
                 <div class="row">
@@ -102,7 +102,7 @@
 
           <div class="container-sms-send">
             <div class="sms send">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam quaerat nemo expedita? Obcaecati blanditiis numquam at vel, doloremque consectetur!
+              <span>{{myMessage}}</span>
               <div class="sms-info send">
                 <span><i class="fa-solid fa-check-double"></i></span>
                 <span>oggi 10:30</span>
@@ -112,8 +112,7 @@
             
           <div class="container-sms-received">
             <div class="sms received">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi rerum repellat distinctio quidem repudiandae quia eligendi asperiores non harum.
-                
+              <span></span>
               <div class="sms-info">
                 <span>oggi 10:30</span>
               </div>
@@ -126,7 +125,8 @@
 
         <div class="input-area">
           <i class="fa-regular fa-face-smile"></i>
-          <input type="text" placeholder="Scrivi un messaggio">
+          <input @keyup.enter=""  v-model="myMessage" type="text" placeholder="Scrivi un messaggio">
+
           <i class="fa-solid fa-microphone"></i>
         </div>
       </div>

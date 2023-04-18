@@ -101,9 +101,12 @@ createApp({
           ]
         },
       ],
+      myMessage:"",
     }
   },
 
-
+methods:{
+ 
+}
 
 }).mount('#app')
