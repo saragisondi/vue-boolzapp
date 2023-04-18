@@ -182,17 +182,18 @@ methods:{
   },
 
   newMySms(){
-    const myNewSms ={
-      message: this.myMessage,
-      status: 'sent'
+    
+    if(this.myMessage.length === 0){
+      
+    }else{
+      const myNewSms ={
+        message: this.myMessage,
+        status: 'sent'
+      }
+      this.contacts[this.counter].messages.push(myNewSms)
+      this.answer()
+      this.myMessage="";
     }
-    console.log(myNewSms)
-
-
-
-    this.contacts[this.counter].messages.push(myNewSms)
-    this.myMessage="";
-    this.answer()
   },
 
   answer(){
