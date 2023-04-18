@@ -60,14 +60,14 @@
 
           <ul>
 
-            <li v-for="(contact, index) in contacts " :class="{'active' : index === 0}">
+            <li  v-for="(contact, index) in contacts " @click="contactClicked(index)">
               <img :src="contact.avatar" alt="avatar">
               <div class="info">
                 <div class="row">
                   <div>{{contact.name}}</div>
                   <div>12:00</div>
                 </div>
-                <div>Ultimo messaggio inviato</div>
+                <span>{{contact.messages[contact.messages.length-1].message}}</span>
               </div>
             </li>
 
@@ -81,7 +81,7 @@
 
         <div class="contacts-last-login">
           <div class="contact">
-            <img src="" alt="avatar">
+            <img :src="" alt="avatar">
 
             <div class="info">
               <div>Nome</div>
@@ -100,23 +100,9 @@
 
         <div class="container-sms">
 
-          <div class="container-sms-send">
-            <div class="sms send">
-              <span>{{myMessage}}</span>
-              <div class="sms-info send">
-                <span><i class="fa-solid fa-check-double"></i></span>
-                <span>oggi 10:30</span>
-              </div>
-            </div>
-          </div>
-            
-          <div class="container-sms-received">
-            <div class="sms received">
-              <span></span>
-              <div class="sms-info">
-                <span>oggi 10:30</span>
-              </div>
-            </div>
+          <div class="sms" v-for="message in (contacts[counter].messages)" :class="message.status">
+            <span>{{message.message}}</span>
+            <span class="date"></span>
           </div>
 
         </div>

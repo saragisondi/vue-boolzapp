@@ -11,9 +11,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Ciao',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Ciao come va?',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'tutto bene, grazie',
+              status:'sent'
+            },
           ]
         },
           {
@@ -23,9 +33,14 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Hai portato fuori il cane?',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Si si',
+              status:'received'
+            },
           ]
         },
           {
@@ -35,9 +50,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Hai fatto la spesa?',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'No, non sono ancora andato',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Dimmi se riesci, altrimenti vado io',
+              status:'sent'
+            },
           ]
         },
           {
@@ -47,9 +72,14 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Ciao',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Ciao',
+              status:'received'
+            },
           ]
         },
           {
@@ -61,7 +91,17 @@ createApp({
               date:'18/04/2023 10:35:55',
               message:'Ciao come va?',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'tutto bene, tu?',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'tutto bene',
+              status:'sent'
+            },
           ]
         },
           {
@@ -71,9 +111,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Ho provato a chiamarti ma non hai risposto',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Scusa, non avevo visto',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Ti richiamo',
+              status:'sent'
+            },
           ]
         },
           {
@@ -83,9 +133,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'ehi ci sei?',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'si perché?',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'chiamami!',
+              status:'sent'
+            },
           ]
         },
           {
@@ -95,18 +155,30 @@ createApp({
           messages:[
             {
               date:'18/04/2023 10:35:55',
-              message:'Ciao come va?',
+              message:'Ci sei stasera a cena?',
               status:'sent'
-            }
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Non lo so ',
+              status:'received'
+            },
+            {
+              date:'18/04/2023 10:35:55',
+              message:'Fammi sapere',
+              status:'sent'
+            },
           ]
         },
       ],
-      myMessage:"",
+      counter:0,
     }
   },
 
 methods:{
- 
+  contactClicked(index){
+    this.counter = index;
+  }
 }
 
 }).mount('#app')

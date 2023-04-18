@@ -10,7 +10,7 @@ body {
   background: rgb(217, 219, 212);
   background: linear-gradient(0deg, rgba(217, 219, 212, 1) 80%, rgba(0, 150, 136, 1) 80%);
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 li {
@@ -33,7 +33,7 @@ img {
   min-width: 600px;
 }
 
-.active{
+li:active{
   background-color:#E9EBEB ;
 }
 /*MAIN*/
@@ -210,9 +210,38 @@ aside {
 /*SMS*/
 .container-sms {
   height: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: hidden;
+  padding: 10px 40px;
 }
 
-.container-sms-send {
+.sms{
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin:10px;
+}
+
+.sent {
+  background-color: #D5F9BA;
+  width: 350px;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #FFFFFF;
+  width: 350px;
+  align-self: flex-start;
+} 
+
+.sms-info {
+  color: #C5CCCC;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .container-sms-send {
   display: flex;
   justify-content: flex-end;
 }
@@ -224,20 +253,8 @@ aside {
   margin: 15px 20px;
 }
 
-.sms.send {
-  background-color: #D5F9BA;
 
-}
 
-.sms.received {
-  background-color: #FFFFFF;
-}
-
-.sms-info {
-  color: #C5CCCC;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .sms-info span {
   margin-right: 10px
