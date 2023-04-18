@@ -1,0 +1,271 @@
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: rgb(217, 219, 212);
+  background: linear-gradient(0deg, rgba(217, 219, 212, 1) 80%, rgba(0, 150, 136, 1) 80%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: 0 20px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  min-width: 600px;
+}
+
+
+/*MAIN*/
+main {
+  width: 85%;
+  height: 850px;
+  display: flex;
+}
+
+.user,
+.contacts-last-login {
+  background-color: #EAEAEA;
+  height: 80px;
+  border: 1px solid #D3D3D3;
+}
+
+.user .container-img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+/*ASIDE*/
+aside {
+  background-color: #FFFFFF;
+  width: 650px;
+}
+
+/*NOTIFICATION*/
+.notification {
+  background-color: #8EDAFC;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.notification i {
+  background-color: #F2FBFF;
+  padding: 15px 12px;
+  border-radius: 50px;
+  margin-left: 20px;
+  color: #8EDAFC;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0 10px;
+}
+
+.notification .text div:last-child {
+  font-size: small;
+  text-decoration: underline;
+  color: #647F8A;
+  cursor: pointer;
+}
+
+/*SEARCH*/
+.search {
+  background-color: #FAFAFA;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search button {
+  background-color: white;
+  border-style: none;
+  border: 1px solid #F4F4F4;
+  border-right: white;
+  height: 36px;
+  width: 15%;
+  color: #A6A6A7;
+  cursor: pointer;
+}
+
+.search input {
+  width: 82%;
+  height: 80%;
+  border-style: none;
+  border: 1px solid #F4F4F4;
+  outline: none;
+}
+
+/*CONTACTS*/
+.contacts {
+  overflow: auto;
+  width: 520px;
+  height: 640px;
+}
+
+.contacts li {
+  height: 80px;
+  display: flex;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.info {
+  margin: 5px 20px;
+  width: 100%;
+}
+
+.info .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info div:first-child {
+  font-size: 19px;
+}
+
+.info div:last-child {
+  font-size: 14px;
+  color: #C6C2C8;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 15px;
+  color: #B1B1B1;
+}
+
+.icon i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/*USER*/
+.user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*RIGHT SIDE*/
+.right-side {
+  background-image: url('../img/mine.jpg');
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+/*CONTACTS LAST LOGIN*/
+.contacts-last-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SMS*/
+.container-sms {
+  height: 70%;
+}
+
+.container-sms-send {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sms {
+  width: 350px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 20px;
+}
+
+.sms.send {
+  background-color: #D5F9BA;
+
+}
+
+.sms.received {
+  background-color: #FFFFFF;
+}
+
+.sms-info {
+  color: #C5CCCC;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sms-info span {
+  margin-right: 10px
+}
+
+.sms-info.send span:first-child {
+  color: #0175AF;
+}
+
+/*INPUT*/
+.input-area i {
+  margin: 0 30px;
+  color: #6A6975;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.input-area {
+  background-color: #F3EEEA;
+  height: 70px;
+  border: 1px solid #D3D3D3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-area input {
+  width: 90%;
+  height: 80%;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+}
