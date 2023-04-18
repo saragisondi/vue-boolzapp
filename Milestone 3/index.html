@@ -69,7 +69,7 @@
               <div class="info">
                 <div class="row">
                   <div>{{contact.name}}</div>
-                  <div>12:00</div>
+                  <div class="date">{{contact.messages[contact.messages.length -1].date}}</div>
                 </div>
                 <span>{{contact.messages[contact.messages.length-1].message}}</span>
               </div>
@@ -111,7 +111,7 @@
 
           <div class="sms" v-for="message in (contacts[counter].messages)" :class="message.status">
             <span>{{message.message}}</span>
-            <span class="date"></span>
+            <span class="date">{{message.hour}}</span>
           </div>
 
         </div>

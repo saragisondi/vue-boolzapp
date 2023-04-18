@@ -36,6 +36,12 @@ img {
 li:active{
   background-color:#E9EBEB ;
 }
+
+.date{
+  font-size: 14px;
+  color: #C6C2C8;
+}
+
 /*MAIN*/
 main {
   width: 85%;
@@ -144,13 +150,17 @@ aside {
   justify-content: space-between;
 }
 
+.info span{
+  color: #C6C2C8;
+}
+
 .info div:first-child {
   font-size: 19px;
 }
 
 .info div:last-child {
   font-size: 14px;
-  color: #C6C2C8;
+  color: #8B8495
 }
 
 .icon {
@@ -191,8 +201,7 @@ aside {
   width: calc(100% - 250px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 /*CONTACTS LAST LOGIN*/
@@ -213,7 +222,6 @@ aside {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow-y: hidden;
   padding: 10px 40px;
 }
 
@@ -221,6 +229,8 @@ aside {
   padding: 10px 30px;
   border-radius: 10px;
   margin:10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sent {
@@ -239,29 +249,6 @@ aside {
   color: #C5CCCC;
   display: flex;
   justify-content: flex-end;
-}
-
-/* .container-sms-send {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sms {
-  width: 350px;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px 20px;
-}
-
-
-
-
-.sms-info span {
-  margin-right: 10px
-}
-
-.sms-info.send span:first-child {
-  color: #0175AF;
 }
 
 /*INPUT*/
