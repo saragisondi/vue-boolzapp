@@ -30,3 +30,4 @@
 
 ### **Steps**:
 1. Creo un messaggio vuoto che collego all'input e al tasto enter in modo che stamperà quello che scrivo;
+2. Creo una timing function dove all'interno creo una costante con il messaggio 'ok';

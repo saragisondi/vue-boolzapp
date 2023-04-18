@@ -188,9 +188,25 @@ methods:{
     }
     console.log(myNewSms)
 
-    this.contacts[this.counter].messages.push(myNewSms)
 
+
+    this.contacts[this.counter].messages.push(myNewSms)
     this.myMessage="";
+    this.answer()
+  },
+
+  answer(){
+    setTimeout(() => {
+
+      const answer ={
+        message: 'ok',
+        status: 'received'
+      }
+      this.contacts[this.counter].messages.push(answer)
+    },1000)
+
+    
+
   }
 }
 
