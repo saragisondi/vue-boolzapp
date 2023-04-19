@@ -195,8 +195,12 @@ createApp({
       ],
       counter:0,
       myMessage:"",
+      searchName:"",
     }
   },
+
+    
+
 
 methods:{
   contactClicked(index){
@@ -230,11 +234,13 @@ methods:{
         status: 'received'
       }
       this.contacts[this.counter].messages.push(answer)
+
     },1000)
 
-    
+  },
 
-  }
+
 }
+
 
 }).mount('#app')
