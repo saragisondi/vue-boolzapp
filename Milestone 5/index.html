@@ -111,8 +111,21 @@
         <div class="container-sms">
 
           <div class="sms" v-for="message in (contacts[counter].messages)" :class="message.status">
-            <span>{{message.message}}</span>
-            <span class="date">{{message.hour}}</span>
+            <span>{{message.message}} </span>
+            <span class="date">
+              {{message.hour}} 
+              <i class="fa-solid fa-chevron-down" style="color: #c0c0c0;"></i>
+            </span>
+
+            <ul class="dropdown-menu">
+              <li>
+                Info messaggio
+              </li>
+
+              <li>
+                Elimina messaggio
+              </li>
+            </ul>
           </div>
 
         </div>

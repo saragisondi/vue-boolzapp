@@ -47,7 +47,6 @@
 ### **Steps**:
 1. aggiungo la chevron al messaggio;
 2. Creo il menù a tendina;
-
 3. Faccio una funzione che al click mi cancella l'elemento.
 4. Prendo il mio array, prendo l'array di messaggi e prendo l'ultimo messaggio e l'ora;
 
