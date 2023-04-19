@@ -10,8 +10,24 @@ body {
   background: rgb(217, 219, 212);
   background: linear-gradient(0deg, rgba(217, 219, 212, 1) 80%, rgba(0, 150, 136, 1) 80%);
   height: 100vh;
-  overflow-y: scroll;
+  scrollbar-width: normal;
+  scrollbar-color: grey #D5F9BA;
 }
+
+/*SCROLLBAR*/
+body::webkit-scrollbar{
+  width: auto;
+}
+
+body::webkit-scrollbar-thumb{
+  background-color: grey;
+}
+
+body::webkit-scrollbar-track{
+  background-color: #D5F9BA;
+}
+
+
 
 li {
   list-style: none;
@@ -22,7 +38,6 @@ img {
   height: 60px;
   border-radius: 50px;
   margin: 0 20px;
-
 }
 
 .container {
@@ -35,11 +50,6 @@ img {
 
 li:active{
   background-color:#E9EBEB ;
-}
-
-.date{
-  font-size: 14px;
-  color: #C6C2C8;
 }
 
 
@@ -236,6 +246,7 @@ aside {
   margin:10px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .sent {
@@ -250,10 +261,9 @@ aside {
   align-self: flex-start;
 } 
 
-.sms-info {
-  color: #C5CCCC;
-  display: flex;
-  justify-content: flex-end;
+.date{
+  font-size: 14px;
+  color: #C6C2C8;
 }
 
 /*DROPDOWN*/

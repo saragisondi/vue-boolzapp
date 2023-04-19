@@ -32,7 +32,7 @@
         <div class="user">
           <div class="user-info">
             <img src="img/avatar_io.jpg" alt="avatar">
-            <div class="name">Sofia</div>
+            <div class="name">Sara</div>
           </div>
 
           <!-- icon -->
@@ -116,7 +116,7 @@
         <!-- sms -->
         <div class="container-sms">
 
-          <div class="sms" v-for="(message,index) in (contacts[counter].messages)" :class="message.status">
+          <div class="sms" v-for="(message, counter) in (contacts[counter].messages)" :class="message.status">
             <span>{{message.message}} </span>
             <span class="date">
               {{message.hour}} 
@@ -128,7 +128,7 @@
                 Info messaggio
               </li>
 
-              <li @click="deleteMessage(index)">
+              <li @click="deleteMessage(counter)">
                 Elimina messaggio
               </li>
             </ul>
@@ -150,6 +150,7 @@
   </div>
 
 </div>
+ 
 
 
 
