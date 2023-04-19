@@ -1,5 +1,7 @@
 const {createApp} = Vue;
 
+const dt = luxon.DateTime;
+
 createApp({
   data(){
     return{
@@ -10,19 +12,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'08:25',
               message:'Ciao',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'09:00',
               message:'Ciao come va?',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'10:30',
               message:'tutto bene, grazie',
               status:'sent'
             },
@@ -34,13 +36,13 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'07:15',
               message:'Hai portato fuori il cane?',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'08:00',
               message:'Si si',
               status:'received'
             },
@@ -52,19 +54,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'10:00',
               message:'Hai fatto la spesa?',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'10:30',
               message:'No, non sono ancora andato',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'07:30',
               message:'Dimmi se riesci, altrimenti vado io',
               status:'sent'
             },
@@ -76,13 +78,13 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'05:45',
               message:'Ciao',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'06:20',
               message:'Ciao',
               status:'received'
             },
@@ -94,19 +96,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'11:25',
               message:'Ciao come va?',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'10:20',
               message:'tutto bene, tu?',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'11:30',
               message:'tutto bene',
               status:'sent'
             },
@@ -118,19 +120,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'11:45',
               message:'Ho provato a chiamarti ma non hai risposto',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'10:05',
               message:'Scusa, non avevo visto',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'09:15',
               message:'Ti richiamo',
               status:'sent'
             },
@@ -142,19 +144,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'09:03',
               message:'ehi ci sei?',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'08:30',
               message:'si perché?',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'08:36',
               message:'chiamami!',
               status:'sent'
             },
@@ -166,19 +168,19 @@ createApp({
           messages:[
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'07:20',
               message:'Ci sei stasera a cena?',
               status:'sent'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'07:02',
               message:'Non lo so ',
               status:'received'
             },
             {
               date:'18/04/2023',
-              hour:'10:25',
+              hour:'06:55',
               message:'Fammi sapere',
               status:'sent'
             },
@@ -188,6 +190,8 @@ createApp({
       counter:0,
       myMessage:"",
       searchName:"",
+      clock:"",
+      day:"",
     }
   },
 
@@ -239,10 +243,17 @@ methods:{
 
   deleteMessage(index){
     this.messages.splice(index,1)
-  }
+  },
     
+  printClock(){
+    this.clock = dt.now().setLocale('it').toLocaleString(dt.TIME_24_SIMPLE);
+},  
+
   },
 
+  mounted() {
+    this.printClock()
+},  
 
 
 

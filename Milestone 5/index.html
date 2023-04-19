@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Vue -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- Luxon -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js' integrity='sha512-KKbQg5o92MwtJKR9sfm/HkREzfyzNMiKPIQ7i7SZOxwEdiNCm4Svayn2DBq7MKEdrqPJUOSIpy1v6PpFlCQ0YA==' crossorigin='anonymous'></script> 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Boolzapp</title>
@@ -70,9 +72,13 @@
               <div class="info">
                 <div class="row">
                   <div>{{contact.name}}</div>
-                  <div class="date">{{contact.messages[contact.messages.length -1].date}}</div>
+                  <div class="date">{{contact.messages[contact.messages.length-1].hour}}
+                  </div>
                 </div>
-                <span>{{contact.messages[contact.messages.length-1].message}}</span>
+                <div class="row">
+                  <span>{{contact.messages[contact.messages.length-1].message}}</span>
+                  <div>{{contacts[counter].messages[contacts[counter].messages.length - 1].date}}</div>
+                </div>
               </div>
             </li>
 
@@ -93,7 +99,7 @@
 
             <div class="info">
               <div>{{contacts[counter].name}}</div>
-              <div>Ultimo accesso il {{contacts[counter].messages[contacts[counter].messages.length - 1].date}} alle {{contacts[counter].messages[contacts[counter].messages.length - 1].hour}}</div>
+              <div>Ultimo accesso il {{contacts[counter].messages[contacts[counter].messages.length - 1].date}} alle {{clock}}</div>
             </div>
 
           </div>
