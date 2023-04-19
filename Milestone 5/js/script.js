@@ -35,13 +35,13 @@ createApp({
           avatar:'img/avatar_2.jpg',
           messages:[
             {
-              date:'18/04/2023',
+              date:'17/04/2023',
               hour:'07:15',
               message:'Hai portato fuori il cane?',
               status:'sent'
             },
             {
-              date:'18/04/2023',
+              date:'17/04/2023',
               hour:'08:00',
               message:'Si si',
               status:'received'
@@ -53,20 +53,20 @@ createApp({
           avatar:'img/avatar_3.jpg',
           messages:[
             {
-              date:'18/04/2023',
-              hour:'10:00',
+              date:'16/04/2023',
+              hour:'7:30',
               message:'Hai fatto la spesa?',
               status:'sent'
             },
             {
-              date:'18/04/2023',
-              hour:'10:30',
+              date:'16/04/2023',
+              hour:'10:00',
               message:'No, non sono ancora andato',
               status:'received'
             },
             {
-              date:'18/04/2023',
-              hour:'07:30',
+              date:'16/04/2023',
+              hour:'10:30',
               message:'Dimmi se riesci, altrimenti vado io',
               status:'sent'
             },
@@ -77,13 +77,13 @@ createApp({
           avatar:'img/avatar_4.jpg',
           messages:[
             {
-              date:'18/04/2023',
+              date:'15/04/2023',
               hour:'05:45',
               message:'Ciao',
               status:'sent'
             },
             {
-              date:'18/04/2023',
+              date:'15/04/2023',
               hour:'06:20',
               message:'Ciao',
               status:'received'
@@ -95,19 +95,19 @@ createApp({
           avatar:'img/avatar_5.jpg',
           messages:[
             {
-              date:'18/04/2023',
-              hour:'11:25',
+              date:'14/04/2023',
+              hour:'10:25',
               message:'Ciao come va?',
               status:'sent'
             },
             {
-              date:'18/04/2023',
-              hour:'10:20',
+              date:'14/04/2023',
+              hour:'11:20',
               message:'tutto bene, tu?',
               status:'received'
             },
             {
-              date:'18/04/2023',
+              date:'14/04/2023',
               hour:'11:30',
               message:'tutto bene',
               status:'sent'
@@ -119,20 +119,20 @@ createApp({
           avatar:'img/avatar_6.jpg',
           messages:[
             {
-              date:'18/04/2023',
-              hour:'11:45',
+              date:'14/04/2023',
+              hour:'09:45',
               message:'Ho provato a chiamarti ma non hai risposto',
               status:'sent'
             },
             {
-              date:'18/04/2023',
+              date:'14/04/2023',
               hour:'10:05',
               message:'Scusa, non avevo visto',
               status:'received'
             },
             {
-              date:'18/04/2023',
-              hour:'09:15',
+              date:'14/04/2023',
+              hour:'10:15',
               message:'Ti richiamo',
               status:'sent'
             },
@@ -143,20 +143,20 @@ createApp({
           avatar:'img/avatar_7.jpg',
           messages:[
             {
-              date:'18/04/2023',
-              hour:'09:03',
+              date:'13/04/2023',
+              hour:'08:03',
               message:'ehi ci sei?',
               status:'sent'
             },
             {
-              date:'18/04/2023',
+              date:'13/04/2023',
               hour:'08:30',
               message:'si perché?',
               status:'received'
             },
             {
-              date:'18/04/2023',
-              hour:'08:36',
+              date:'13/04/2023',
+              hour:'09:36',
               message:'chiamami!',
               status:'sent'
             },
@@ -167,20 +167,20 @@ createApp({
           avatar:'img/avatar_8.jpg',
           messages:[
             {
-              date:'18/04/2023',
-              hour:'07:20',
+              date:'12/04/2023',
+              hour:'06:55',
               message:'Ci sei stasera a cena?',
               status:'sent'
             },
             {
-              date:'18/04/2023',
+              date:'12/04/2023',
               hour:'07:02',
               message:'Non lo so ',
               status:'received'
             },
             {
-              date:'18/04/2023',
-              hour:'06:55',
+              date:'12/04/2023',
+              hour:'07:05',
               message:'Fammi sapere',
               status:'sent'
             },
