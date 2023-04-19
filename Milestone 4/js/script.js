@@ -224,6 +224,14 @@ methods:{
     }
   },
 
+    computed: {
+    searchContacts(){
+      return this.contacts.filter(contact => {
+        return contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+      })
+    }
+  },
+
   answer(){
     setTimeout(() => {
 
