@@ -1,11 +1,8 @@
 const {createApp} = Vue;
 
-
 createApp({
   data(){
     return{
-      clock:null,
-      seconds: null,
       contacts:[
         {
           name:'Michele',
@@ -202,7 +199,6 @@ createApp({
   },
 
 methods:{
-
   contactClicked(index){
     this.counter = index;
   },
@@ -238,9 +234,7 @@ methods:{
 
     
 
-  },
-
-
+  }
 }
 
 }).mount('#app')

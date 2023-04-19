@@ -31,3 +31,9 @@
 ### **Steps**:
 1. Creo un messaggio vuoto che collego all'input e al tasto enter in modo che stamperà quello che scrivo;
 2. Creo una timing function dove all'interno creo una costante con il messaggio 'ok';
+
+### **Milestone 4** <br>
+**Ricerca utenti:** scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
+
+### **Steps**:
+1. collego con il v-model l'input alla lista dei contatti;
