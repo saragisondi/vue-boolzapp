@@ -36,4 +36,18 @@
 **Ricerca utenti:** scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 ### **Steps**:
-1. collego con il v-model l'input alla lista dei contatti;
+1. collego con il v-model a una stringa vuota;
+2. faccio una funzione per cercare dentro il mio array i nomi dei contatti che includono quello che viene scritto nell'input;
+3. faccio un ciclo for cer cercare il contatto nei contatti filtrati;
+
+### **Milestone 5** <br>
+**Cancella messaggio:** cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato;
+**Visualizzazione ora e ultimo messaggio inviato/ricevuto** nella lista dei contatti;
+
+### **Steps**:
+1. aggiungo la chevron al messaggio;
+2. Creo il menù a tendina;
+
+3. Faccio una funzione che al click mi cancella l'elemento.
+4. Prendo il mio array, prendo l'array di messaggi e prendo l'ultimo messaggio e l'ora;
+

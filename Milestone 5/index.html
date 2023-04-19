@@ -57,7 +57,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
           <input v-model="searchName" type="text" placeholder="Cerca o inizia una nuova chat">
-          <!-- <div v-for="contact in searchContacts"></div> -->
+          <div v-for="contact in searchContacts"></div>
         </div>
 
         <!-- list contacts -->
@@ -65,7 +65,7 @@
 
           <ul>
 
-            <li  v-for="(contact, index) in contacts " @click="contactClicked(index)">
+            <li  v-for="(contact, index) in searchContacts " @click="contactClicked(index)">
               <img :src="contact.avatar" alt="avatar">
               <div class="info">
                 <div class="row">
@@ -93,7 +93,7 @@
 
             <div class="info">
               <div>{{contacts[counter].name}}</div>
-              <div>Ultimo accesso oggi alle 10:30</div>
+              <div>Online <i class="fa-solid fa-circle" style="color: #00ff00;"></i></div>
             </div>
 
           </div>

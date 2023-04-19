@@ -199,7 +199,6 @@ createApp({
     }
   },
 
-    
   computed: {
     searchContacts(){
       return this.contacts.filter(contact => {
@@ -207,6 +206,7 @@ createApp({
       })
     },
   },
+
 
 methods:{
   contactClicked(index){
@@ -230,6 +230,7 @@ methods:{
     }
   },
 
+    
   },
 
   answer(){
