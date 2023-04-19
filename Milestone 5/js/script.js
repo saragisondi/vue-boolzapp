@@ -7,7 +7,6 @@ createApp({
         {
           name:'Michele',
           avatar:'img/avatar_1.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -32,7 +31,6 @@ createApp({
           {
           name:'Fabio',
           avatar:'img/avatar_2.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -51,7 +49,6 @@ createApp({
           {
           name:'Samuele',
           avatar:'img/avatar_3.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -76,7 +73,6 @@ createApp({
           {
           name:'Alessandro B.',
           avatar:'img/avatar_4.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -95,7 +91,6 @@ createApp({
           {
           name:'Alessandro L.',
           avatar:'img/avatar_5.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -120,7 +115,6 @@ createApp({
           {
           name:'Claudia',
           avatar:'img/avatar_6.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -145,7 +139,6 @@ createApp({
           {
           name:'Federico',
           avatar:'img/avatar_7.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -170,7 +163,6 @@ createApp({
           {
           name:'Michele',
           avatar:'img/avatar_8.jpg',
-          visible:true,
           messages:[
             {
               date:'18/04/2023',
@@ -230,9 +222,6 @@ methods:{
     }
   },
 
-    
-  },
-
   answer(){
     setTimeout(() => {
 
@@ -248,6 +237,11 @@ methods:{
 
   },
 
+  deleteMessage(index){
+    this.messages.splice(index,1)
+  }
+    
+  },
 
 
 
